@@ -1,0 +1,8 @@
+d=eval(raw_input('Enter the monthly saving amount:'))
+d1=d * (1+0.00417)
+d2=(d+d1)*(1+0.00417)
+d3=(d+d2)*(1+0.00417)
+d4=(d+d3)*(1+0.00417)
+d5=(d+d4)*(1+0.00417)
+d6=(d+d5)*(1+0.00417)
+print(d6)
