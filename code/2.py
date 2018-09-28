@@ -5,23 +5,33 @@ for i in range ()
 
 '''
 #6
-x,y=eval(input('>>'))
-z=0
-for i in range (0,100):
-	l=0.05*(1+0.125)**i
-	z=(x*(1+l))**y
-	print(z)
-	if(l>0.08):
-		break
+def computeNum(rate, loanAmount, numYears):
+    totalPayment = loanAmount * ((1+rate)**numYears)
+    return totalPayment
+
+loanAmount = eval(input('输入贷款总额：'))
+numYears =  eval(input('输入贷款周期（年）：'))
+for i in range(0, 25):
+    rate = 0.05 + i*0.00125
+    totalPay = computeNum(rate, loanAmount, numYears)
+    print('利率为%f的月还款额为%f，总还款额为%f' %(rate, totalPay/60, totalPay))
 '''
 '''
 #5
-a=0
-for i in range (1,1000):
-	while(i**2>12000):
-		a=i
-		continue
-print(a)
+n = 0.0
+count = True
+while 1:
+    n = n + 1.0
+    if n * n * n > 12000:
+        if count:
+            print('n**3', n - 1)
+            count = False
+
+    # print('hahah')
+    if n * n >= 12000:
+        print(n * n)
+        print('n**2', n)
+        break
 
 	
 
