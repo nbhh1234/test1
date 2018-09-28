@@ -1,3 +1,67 @@
+
+
+
+'''
+
+def fun1(nu1,nu2,nu3):
+	return nu1,nu2,nu3
+def fun2(nu1,nu2,nu3):
+	return nu1**2,nu2**2,nu3**2
+def min(nu1,nu2,nu3,nu4,nu5,nu6):
+	print(nu1,nu2,nu3,nu4,nu5,nu6)
+a,b,c=eval(raw_input('>>'))
+x1,x2,x3=fun1(a,b,c)
+x4,x5,x6=fun2(a,b,c)
+min(x1,x2,x3,x4,x5,x6)
+
+'''
+
+'''
+
+for i in range (1,10):
+	for j in range (1,10):
+		if(i<=j):
+			print('{}*{}={}'.format(i,j,i*j))
+	print('/n')	
+'''
+'''
+sum=0
+i=1
+for sum in range (10000):
+	sum=sum+i
+	i=i+1
+print(sum)	
+'''
+'''
+sum=0
+i=0
+while(i<1001):
+	i=i+1
+	sum=sum+i
+print(sum)
+'''
+'''
+
+yimport random
+a=eval(raw_input('>>'))
+b=random.randint(0,10)
+while(a!=b):
+	print('your are error!')
+	a=eval(raw_input('>>'))
+	
+while(a==b):
+	print('yes')
+	break
+'''
+'''
+a=raw_input('>>')
+i=0
+while(i<len(a)):
+	print(a[i])
+	i +=1
+'''
+
+
 '''
 #1.12
 a,b,c=eval(raw_input('>>'))
